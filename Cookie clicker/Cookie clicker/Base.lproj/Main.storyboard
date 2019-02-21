@@ -95,11 +95,17 @@
                                 <rect key="frame" x="138" y="219" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Koop een oma"/>
+                                <connections>
+                                    <action selector="purchaseGrandma:" destination="91s-gH-I2M" eventType="primaryActionTriggered" id="Ev2-Rz-Ztg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp0-lr-GNT">
                                 <rect key="frame" x="125" y="257" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Koop een boederij"/>
+                                <connections>
+                                    <action selector="purchaseFarm:" destination="91s-gH-I2M" eventType="primaryActionTriggered" id="fZA-fC-MaL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

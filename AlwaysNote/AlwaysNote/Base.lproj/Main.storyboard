@@ -63,14 +63,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlR-mv-90D">
                                                 <rect key="frame" x="8" y="2" width="57" height="33.5"/>
                                                 <state key="normal" title="Opslaan"/>
+                                                <connections>
+                                                    <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="zJv-AW-slv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acd-xC-EWN">
                                                 <rect key="frame" x="331" y="4" width="36" height="29.5"/>
                                                 <state key="normal" title="big A"/>
+                                                <connections>
+                                                    <action selector="increaseFont:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FfE-yO-DbJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-bd-uGa">
                                                 <rect key="frame" x="273" y="4" width="50" height="29.5"/>
                                                 <state key="normal" title="small A"/>
+                                                <connections>
+                                                    <action selector="decreaseFont:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="SPr-UJ-qes"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,6 +124,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textview" destination="uoW-cH-z4B" id="sYE-La-Ldf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

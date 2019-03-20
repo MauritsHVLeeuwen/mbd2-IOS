@@ -63,6 +63,7 @@
                     <navigationItem key="navigationItem" id="wTU-8m-Jva"/>
                     <connections>
                         <outlet property="ClicksLabel" destination="H6P-Eh-O77" id="Jit-kQ-8SA"/>
+                        <outlet property="cookieImage" destination="MIb-Rb-4WS" id="8MC-7u-KWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

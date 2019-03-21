@@ -31,7 +31,9 @@ public class PokemonApi {
     }
     
     func getPokemon() -> [SmallPokemonData] {
+        
         return pokemonList
+        
     }
     
     func getPokemonDetail(pokemonNumber: Int, callback: @escaping (PokemonData)->()) {

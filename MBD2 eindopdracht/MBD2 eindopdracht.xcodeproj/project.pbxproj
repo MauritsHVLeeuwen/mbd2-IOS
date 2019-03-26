@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F80CEF9224A78690045CC7B /* PokemonDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F80CEF8224A78690045CC7B /* PokemonDetailController.swift */; };
 		0FB1A0BC2243E53C00F050CF /* PokemonBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB1A0BB2243E53C00F050CF /* PokemonBehavior.swift */; };
 		0FB1A0BE2243EABE00F050CF /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB1A0BD2243EABE00F050CF /* PokemonView.swift */; };
 		0FF76E9B22426C940040A2B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76E9A22426C940040A2B3 /* AppDelegate.swift */; };
@@ -19,7 +20,6 @@
 		0FF76EC9224274D70040A2B3 /* PokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76EC8224274D70040A2B3 /* PokemonList.swift */; };
 		0FF76ECB22427DFF0040A2B3 /* PokemonListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76ECA22427DFF0040A2B3 /* PokemonListController.swift */; };
 		0FF76ECD22427E8C0040A2B3 /* PokemonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76ECC22427E8C0040A2B3 /* PokemonApi.swift */; };
-		0FF76ECF224296C30040A2B3 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76ECE224296C30040A2B3 /* OptionsController.swift */; };
 		0FF76ED1224296EB0040A2B3 /* PokemonCatcherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF76ED0224296EB0040A2B3 /* PokemonCatcherController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F80CEF8224A78690045CC7B /* PokemonDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailController.swift; sourceTree = "<group>"; };
 		0FB1A0BB2243E53C00F050CF /* PokemonBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonBehavior.swift; sourceTree = "<group>"; };
 		0FB1A0BD2243EABE00F050CF /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		0FF76E9722426C940040A2B3 /* MBD2 eindopdracht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBD2 eindopdracht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +60,6 @@
 		0FF76EC8224274D70040A2B3 /* PokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonList.swift; sourceTree = "<group>"; };
 		0FF76ECA22427DFF0040A2B3 /* PokemonListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListController.swift; sourceTree = "<group>"; };
 		0FF76ECC22427E8C0040A2B3 /* PokemonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonApi.swift; sourceTree = "<group>"; };
-		0FF76ECE224296C30040A2B3 /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		0FF76ED0224296EB0040A2B3 /* PokemonCatcherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCatcherController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F80CEFA224A78720045CC7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F80CEF8224A78690045CC7B /* PokemonDetailController.swift */,
+				0FF76E9C22426C940040A2B3 /* ViewController.swift */,
+				0FF76ECA22427DFF0040A2B3 /* PokemonListController.swift */,
+				0FF76ED0224296EB0040A2B3 /* PokemonCatcherController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0FF76E8E22426C940040A2B3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,14 +122,11 @@
 		0FF76E9922426C940040A2B3 /* MBD2 eindopdracht */ = {
 			isa = PBXGroup;
 			children = (
+				0F80CEFA224A78720045CC7B /* Controllers */,
 				0FF76E9A22426C940040A2B3 /* AppDelegate.swift */,
-				0FF76E9C22426C940040A2B3 /* ViewController.swift */,
 				0FF76E9E22426C940040A2B3 /* Main.storyboard */,
-				0FF76ECE224296C30040A2B3 /* OptionsController.swift */,
-				0FF76ED0224296EB0040A2B3 /* PokemonCatcherController.swift */,
 				0FB1A0BD2243EABE00F050CF /* PokemonView.swift */,
 				0FB1A0BB2243E53C00F050CF /* PokemonBehavior.swift */,
-				0FF76ECA22427DFF0040A2B3 /* PokemonListController.swift */,
 				0FF76ECC22427E8C0040A2B3 /* PokemonApi.swift */,
 				0FF76EA122426C950040A2B3 /* Assets.xcassets */,
 				0FF76EA322426C950040A2B3 /* LaunchScreen.storyboard */,
@@ -281,10 +289,10 @@
 				0FB1A0BC2243E53C00F050CF /* PokemonBehavior.swift in Sources */,
 				0FF76E9B22426C940040A2B3 /* AppDelegate.swift in Sources */,
 				0FB1A0BE2243EABE00F050CF /* PokemonView.swift in Sources */,
+				0F80CEF9224A78690045CC7B /* PokemonDetailController.swift in Sources */,
 				0FF76ED1224296EB0040A2B3 /* PokemonCatcherController.swift in Sources */,
 				0FF76ECD22427E8C0040A2B3 /* PokemonApi.swift in Sources */,
 				0FF76EC9224274D70040A2B3 /* PokemonList.swift in Sources */,
-				0FF76ECF224296C30040A2B3 /* OptionsController.swift in Sources */,
 				0FF76ECB22427DFF0040A2B3 /* PokemonListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

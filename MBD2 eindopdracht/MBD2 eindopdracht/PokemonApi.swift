@@ -42,7 +42,7 @@ public class PokemonApi {
                 do {
                     let decoder = JSONDecoder()
                     let data = try decoder.decode(PokemonData.self, from: data!)
-                    callback(data)
+                    DispatchQueue.main.async{callback(data)}
                 } catch let jsonErr {
                     print("Failed", jsonErr)
                 }

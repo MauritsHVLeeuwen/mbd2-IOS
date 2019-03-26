@@ -11,5 +11,6 @@ import UIKit
 
 class PokemonView: UIView
 {
-    var pokemonID = 0
+    var pokemonData: PokemonData!
+    var tapped: Bool!
 }

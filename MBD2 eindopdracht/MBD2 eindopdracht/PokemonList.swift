@@ -17,9 +17,18 @@ struct SmallPokemonData : Codable{
 struct PokemonData : Codable{
     var id : Int
     var name : String
-    var Types : [PokemonTypes]
+    var types : [PokemonTypes]
+    var sprites : PokemonSprites
 }
 
 struct PokemonTypes : Codable{
-    var name: String
+    var type : PokemonTypeName
+}
+
+struct PokemonTypeName : Codable{
+    var name : String
+}
+
+struct PokemonSprites : Codable{
+    var front_default : String
 }

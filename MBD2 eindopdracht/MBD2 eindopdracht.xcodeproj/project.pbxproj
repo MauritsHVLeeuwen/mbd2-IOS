@@ -99,6 +99,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0FB20D3B22562F2500E079FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FB1A0BD2243EABE00F050CF /* PokemonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FB20D3C22562F3100E079FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FF76EC8224274D70040A2B3 /* PokemonList.swift */,
+				0FF76ECC22427E8C0040A2B3 /* PokemonApi.swift */,
+				0FB1A0BB2243E53C00F050CF /* PokemonBehavior.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0FF76E8E22426C940040A2B3 = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +140,14 @@
 		0FF76E9922426C940040A2B3 /* MBD2 eindopdracht */ = {
 			isa = PBXGroup;
 			children = (
+				0FB20D3C22562F3100E079FA /* Model */,
+				0FB20D3B22562F2500E079FA /* View */,
 				0F80CEFA224A78720045CC7B /* Controllers */,
 				0FF76E9A22426C940040A2B3 /* AppDelegate.swift */,
 				0FF76E9E22426C940040A2B3 /* Main.storyboard */,
-				0FB1A0BD2243EABE00F050CF /* PokemonView.swift */,
-				0FB1A0BB2243E53C00F050CF /* PokemonBehavior.swift */,
-				0FF76ECC22427E8C0040A2B3 /* PokemonApi.swift */,
 				0FF76EA122426C950040A2B3 /* Assets.xcassets */,
 				0FF76EA322426C950040A2B3 /* LaunchScreen.storyboard */,
 				0FF76EA622426C950040A2B3 /* Info.plist */,
-				0FF76EC8224274D70040A2B3 /* PokemonList.swift */,
 			);
 			path = "MBD2 eindopdracht";
 			sourceTree = "<group>";

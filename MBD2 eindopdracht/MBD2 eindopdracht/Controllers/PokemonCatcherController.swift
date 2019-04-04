@@ -47,7 +47,9 @@ class PokemonCatcherController: UIViewController {
             PokemonApi.sharedInstance.getPokemonDetail(pokemonNumber: pokemonID, callback: self.displayPokemon)
         } else {
             let myViews = gameView.subviews.filter({$0 is PokemonView})
-            behavior.push(myViews[Int.random(in: 0 ..< myViews.count)])
+            if(myViews.count > 0) {
+                behavior.push(myViews[Int.random(in: 0 ..< myViews.count)])
+            }
         }
     }
     
@@ -148,23 +150,16 @@ class PokemonCatcherController: UIViewController {
         spawnNewPokemon()
     }
     
-    //    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
-//        var text=""
-//        switch UIDevice.current.orientation{
-//        case .portrait:
-//            text="Portrait"
-//        case .portraitUpsideDown:
-//            text="PortraitUpsideDown"
-//        case .landscapeLeft:
-//            text="LandscapeLeft"
-//        case .landscapeRight:
-//            text="LandscapeRight"
-//        default:
-//            text="Another"
-//        }
-//        print()
-//    }
-    
-    
-    
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
+       
+        print("rotated")
+        
+        let pokemonViews = gameView.subviews
+        
+        pokemonViews.forEach { view in
+            view.removeFromSuperview()
+        }
+        
+        pokemonCount = 0
+    }
 }
